@@ -17,7 +17,7 @@ while (!isInteger) {
   maxNumber = parseInt(maxNumber); // Covert maxNumber from a string to an integer
   
 // Conditional expression that ensures number entered by user is greater than zero and a true integer
-  if (Number.isSafeInteger(maxNumber) && maxNumber > 0); 
+  if (Number.isSafeInteger(maxNumber) && maxNumber > 0){ 
     isInteger = true;
 } 
   
