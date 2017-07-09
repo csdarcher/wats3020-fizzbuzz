@@ -14,13 +14,13 @@ isInteger = false;
 while (!isInteger) {
   // Prompt the user for the `maxNumber` value.
   maxNumber = prompt('Enter a number over zero. Your number must be an integer:', 15);
-  maxNumber = parseInt(maxNumber); // Covert maxNumber from a string to an integer
   
 // Conditional expression that ensures number entered by user is greater than zero and a true integer
-  if (Number.isSafeInteger(maxNumber) && maxNumber > 0){ 
-    isInteger = true;
-} 
-  
+  maxNumber = parseInt(maxNumber); // Covert maxNumber from a string to an integer
+  if (Number.isSafeInteger(maxNumber) && maxNumber > 0) { 
+      isInteger = true;
+      }   
+}
 fbResults = []; // Initialize the `fbResults` variable to an empty Array
 
 for (let i=1; 1 <= maxNumber; i++) { // `for` loop that will execute the `maxNumber` of times.
@@ -28,13 +28,13 @@ for (let i=1; 1 <= maxNumber; i++) { // `for` loop that will execute the `maxNum
   // Create`for` loop to calculate FizzBuzz.  
   // Store the results of this logic in an array called `fbResults`.
     if (i % 15 == 0) {
-      fbResults.push('FizzBuzz!');
+        fbResults.push('FizzBuzz');
     } else if (i % 3 == 0) {
-       fbResults.push('Fizz!');
+        fbResults.push('Fizz');
     } else if (i % 5 == 0) {
-       fbResults.push('Buzz!');
+        fbResults.push('Buzz');
     } else {
-      fbResults.push(i);
+        fbResults.push(i);
     }          
 
 }
